@@ -34,15 +34,15 @@
                 </div>
                 <div class="input-and-label">
                     <label for="PhoneNumer">Phone Numer</label>
-                    <input type="" name="PhoneNumer" placeholder="PhoneNumer">
+                    <input type="" name="PhoneNumer" placeholder="PhoneNumer" pattern="">
                 </div>
                 <div class="input-and-label">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="password">
+                    <input type="password" name="password" placeholder="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8">
                 </div>
                 <div class="input-and-label">
                     <label for="password">Confirm Password</label>
-                    <input type="password" name="password" placeholder="password">
+                    <input type="password" name="password" placeholder="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8">
                 </div>
             </div>
             <input type="submit" value="Create Account">

@@ -61,6 +61,19 @@
 }label{
     text-transform: uppercase;
     padding: 10px;
+}.inputs input:invalid{
+    border: 1px solid red !important;
+}.inputs input:valid, .inputs input:valid:focus{
+    border: 1px solid rgb(21, 255, 0) !important;
+    outline : none;
+}.inputs input:placeholder-shown{
+    border: 1px solid var(--input-border-color) !important;
+}.inputs input:focus{
+    outline: none;
+}
+
+.inputs input::placeholder{
+    display: none;
 }input[type="submit"]{
     background-color: var(--button-color);
     color: #ffffff;
@@ -72,4 +85,5 @@
     cursor: pointer;
     border-radius: 20px;
     width: 30%;
+    border: none;
 }
